@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% block content %}
+<div class="teachers">
+  <h1>Here is a list of all teachers</h1>
+  <ul>
+    {% for teach in teachers %}
+    <li>{{teach}}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

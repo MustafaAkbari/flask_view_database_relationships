@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="{{url_for('index')}}">Home Page</a>
+        <a class="nav-item nav-link" href="{{url_for('list_teacher')}}"
+          >List Teachers</a
+        >
+        <a class="nav-item nav-link" href="{{url_for('add_teacher')}}"
+          >Add Teachers</a
+        >
+        <a class="nav-item nav-link" href="{{url_for('delete_teacher')}}"
+          >Remove Teachers</a
+        >
+        <a class="nav-item nav-link" href="{{url_for('add_subject')}}"
+          >Add subjects</a
+        >
+      </div>
+    </nav>
+    {% block content %} {% endblock %}
+  </body>
+</html>
